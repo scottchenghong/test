@@ -18,7 +18,7 @@ class WebBase:
 
 if __name__ == '__main__' :
     
-    dr = webdriver.Ie( )
+    dr = webdriver.Chrome( )
     url = 'http://localhost:7272/'
     
     try:
