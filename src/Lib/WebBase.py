@@ -19,7 +19,7 @@ class WebBase:
 if __name__ == '__main__' :
     
     dr = webdriver.Chrome( )
-    url = 'http://sina.com/'
+    url = 'http://baidu.com/'
     
     try:
         webbase = WebBase(dr,url)
