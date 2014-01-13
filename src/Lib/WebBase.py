@@ -18,7 +18,7 @@ class WebBase:
 
 if __name__ == '__main__' :
     
-    dr = webdriver.Chrome( )
+    dr = webdriver.Firefox( )
     url = 'http://baidu.com/'
     
     try:
