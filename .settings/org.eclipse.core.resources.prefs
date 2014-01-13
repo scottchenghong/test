@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/Lib/Mail.py=utf8
+encoding//src/Lib/Table.py=utf-8
+encoding//src/Lib/WebBase.py=utf-8
+encoding//src/Lib/__init__.py=utf-8
+encoding//src/Lib/web_control.py=utf-8
+encoding//src/Page/report_manage/channelLevelReport.py=utf-8
+encoding//src/TestController/testcontroller.py=utf8
+encoding//src/testresult/testresult.py=utf-8
