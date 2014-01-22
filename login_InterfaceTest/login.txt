@@ -1,0 +1,16 @@
+*** Settings ***
+Library           HttpLibrary.HTTP
+Resource          test.txt
+
+*** Test Cases ***
+user_login
+    Create Http Context    localhost:7272    http
+    get    /welcome.html?username=demo&password=mode
+    Get Response Status
+    Response Status Code Should Equal    200
+
+login_index
+    Create Http Context    localhost:7272    http
+    get    /index.html
+    Get Response Status
+    Response Status Code Should Equal    200

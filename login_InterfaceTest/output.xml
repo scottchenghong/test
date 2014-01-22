@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140122 15:43:38.155" generator="Robot 2.8.1 (Python 2.7.5 on win32)">
+<suite source="E:\soft\robot\test_login\login.txt" id="s1" name="Login">
+<test id="s1-t1" name="login_index">
+<kw type="kw" name="HttpLibrary.HTTP.Create Http Context">
+<doc>Sets the HTTP host to use for future requests. You must call this</doc>
+<arguments>
+<arg>localhost:7272</arg>
+<arg>http</arg>
+</arguments>
+<msg timestamp="20140122 15:43:38.263" level="INFO">Host for next HTTP request set to 'localhost:7272'</msg>
+<msg timestamp="20140122 15:43:38.263" level="INFO">Scheme for next HTTP request set to 'http'</msg>
+<status status="PASS" endtime="20140122 15:43:38.263" starttime="20140122 15:43:38.262"></status>
+</kw>
+<kw type="kw" name="HttpLibrary.HTTP.GET">
+<doc>Issues a HTTP GET request.</doc>
+<arguments>
+<arg>/index.html</arg>
+</arguments>
+<status status="PASS" endtime="20140122 15:43:39.278" starttime="20140122 15:43:38.263"></status>
+</kw>
+<kw type="kw" name="HttpLibrary.HTTP.Get Response Status">
+<doc>Returns the response status line (e.g. "200 OK" or "404 Not found")</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140122 15:43:39.280" starttime="20140122 15:43:39.280"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140122 15:43:39.281" critical="yes" starttime="20140122 15:43:38.262"></status>
+</test>
+<test id="s1-t2" name="user_login">
+<kw type="kw" name="login_index">
+<doc></doc>
+<arguments>
+</arguments>
+<msg timestamp="20140122 15:43:39.285" level="FAIL">No keyword with name 'login_index' found.</msg>
+<status status="FAIL" endtime="20140122 15:43:39.285" starttime="20140122 15:43:39.285"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140122 15:43:39.286" critical="yes" starttime="20140122 15:43:39.283">No keyword with name 'login_index' found.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20140122 15:43:39.290" starttime="20140122 15:43:38.156"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="1" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
