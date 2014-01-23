@@ -1,0 +1,3 @@
+包含两套关键字测试脚本。
+interface_tests：http协议的get接口，主要是打开index页面和用户登陆，合计2个testcase。
+login_tests：模拟用户的WEB页面测试脚本，包括正确登陆和错误登陆等8个testcase。
