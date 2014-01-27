@@ -20,7 +20,7 @@ def kill_process(port):
     @return: none 
     '''
     #kill porcess from port
-    command = " kill -9 $(lsof -i:7272|tail -1|awk '\"$1\"!=\"\"{print $2}')"%(port)
+    command = " kill -9 $(lsof -i:%s|tail -1|awk '\"$1\"!=\"\"{print $2}')"%(port)
     
     _excute_command(command)
 
