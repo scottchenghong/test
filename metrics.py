@@ -12,6 +12,9 @@ import urllib,urllib2
 import msg_pb2
 
 class metrics(object):
+    '''
+    根据metrics协议标准构造valuelist数据，并通过post接口循环发数据
+    '''
     
     def get_body(self,metrics,value):
         '''
@@ -36,7 +39,7 @@ class metrics(object):
             for value in valuelist:
                 
                 print self.get_body(StorageRequest.metrics.add(),value)
-            
+                #序列化
                 msgs = StorageRequest.SerializeToString()
                 
                 #发送post请求
